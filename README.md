@@ -1,10 +1,8 @@
 # Var das Multas (VDM)
 
-Handoff completo da landing page do projeto Var das Multas (VDM), organizado pelo GTRM Studio. Este repositório reúne as versões Desktop e Mobile da interface, com foco em preservar a fidelidade visual e facilitar a implementação final em ambiente de produção.
+Handoff completo do Site Var das Multas (VDM), desenhado pelo GTRM Studio. Este repositório reúne as versões Desktop e Mobile da interface, com foco em auxiliar na fidelidade visual e facilitar a implementação final em ambiente de produção.
 
 ## Visão Geral
-
-Este projeto contém o handoff completo das versões Desktop e Mobile da landing page do VDM.
 
 O material foi estruturado para atender duas frentes:
 
@@ -55,7 +53,7 @@ está documentada no arquivo `components/design/variables.json`.
 
 O projeto utiliza Tailwind CSS com esses tokens injetados, garantindo consistência entre o handoff e a implementação visual. Na prática, esse arquivo funciona como a fonte central de referência para reproduzir o design com precisão.
 
-## Filosofia de Colaboração
+## Importante
 
 Este código deve ser entendido como um **Guia de Alta Fidelidade**.
 
@@ -67,9 +65,9 @@ Isso significa que os arquivos entregues não precisam ser tratados como uma est
 - reconstruir partes da interface;
 - eliminar excessos e bloat típicos de exportações automatizadas.
 
-O objetivo deste handoff não é impor uma implementação literal, e sim evitar adivinhações. As medidas, cores, tipografia, espaçamentos e comportamentos visuais já estão registrados para que a entrega final respeite o que foi definido pela direção de arte, com margem técnica para adaptação, otimização e ganho de performance.
+O objetivo deste handoff não é impor uma implementação literal, e sim auxiliar no fluxo. As medidas, cores, tipografia, espaçamentos e comportamentos visuais já estão registrados para que a entrega final respeite o que foi definido na arte, com margem técnica para adaptação, otimização e ganho de performance.
 
-Em outras palavras: use este material como referência confiável de fidelidade, e não como limitação estrutural.
+Use este material como referência confiável de fidelidade, e não como limitação estrutural.
 
 ## Assets
 
