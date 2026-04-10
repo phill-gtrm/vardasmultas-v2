@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VAR das Multas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Sofia+Sans+Condensed:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "white-pure": "#FFFFFF",
+              "neutral-50": "#F6F6F6",
+              "neutral-400": "#888888",
+              "neutral-600": "#5D5D5D",
+              "neutral-800": "#454545",
+              "black-main": "#1E1E1E",
+              "black-1200": "#141414",
+              "black-pure": "#000000",
+              "green-50": "#F8FCE9",
+              "green-200": "#CBE86E",
+              "green-main": "#98C224",
+              "green-700": "#587417",
+              "green-950": "#1F2B08",
+              "yellow-main": "#FFED3E",
+              "yellow-400": "#FDDE12",
+              "yellow-500": "#ECC306",
+              "yellow-600": "#CC9802",
+              "red-500": "#F15242",
+              "red-main": "#DF3B2A",
+              "red-800": "#9A261A",
+              "transp-80": "#000000CC",
+              "transp-60": "#00000099",
+              "transp-35": "#00000059",
+              "transp-20": "#00000033",
+              "linear-green-15": "#1F2B0826",
+            },
+            fontFamily: {
+              primary: ['Sofia Sans Condensed', 'sans-serif'],
+              secondary: ['IBM Plex Sans', 'sans-serif'],
+            },
+            borderRadius: {
+              "rad-none": "0px",
+              "rad-4": "4px",
+              "rad-8": "8px",
+              "rad-12": "12px",
+              "rad-16": "16px",
+              "rad-32": "32px",
+              "rad-rounded": "999px",
+            },
+            spacing: {
+              "sp-2": "2px",
+              "sp-4": "4px",
+              "sp-8": "8px",
+              "sp-10": "10px",
+              "sp-12": "12px",
+              "sp-16": "16px",
+              "sp-20": "20px",
+              "sp-24": "24px",
+              "sp-32": "32px",
+              "sp-56": "56px",
+              "sp-80": "80px",
+              "screen-size-mb": "393px",
+              "screen-size-dk": "1440px",
+              "desktop-screen": "1440px",
+              "mobile-screen": "393px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-black-main font-secondary text-white-pure">
+    <div class="px-16 max-md:pl-5">
+      <div class="mx-auto flex w-[1440px] max-w-full flex-col items-center overflow-hidden bg-black-main">
+        <header class="flex w-full max-w-[1438px] flex-wrap items-center justify-between gap-10 px-32 py-8 max-md:px-5 max-md:max-w-full">
+          <img src="../../assets/icons/svg/logotipo.svg" alt="VAR das Multas Logo" class="my-auto aspect-[1.73] w-[111px] shrink-0 object-contain" />
+          <nav class="flex min-w-60 items-center gap-14 self-stretch text-base font-[450] text-center text-white-pure max-md:max-w-full">
+            <a href="#como-funciona" class="rounded">Como funciona</a>
+            <a href="#lei-seca" class="rounded">Lei Seca</a>
+            <a href="#cnh-permissionaria" class="rounded">CNH Permissionária</a>
+          </nav>
+          <div class="flex items-start gap-6 self-stretch my-auto">
+            <button type="button" class="flex w-6 items-start" aria-label="Abrir menu">
+              <img src="../../assets/icons/svg/menu.svg" alt="Menu" class="aspect-square w-6 object-contain" />
+            </button>
+            <a href="#minha-conta" class="text-base font-[450] text-center text-white-pure"><span style="text-decoration: underline">Minha conta</span></a>
+          </div>
+        </header>
+
+        <div class="min-h-px w-[1200px] max-w-full border border-solid border-black-1200 bg-black-1200"></div>
+
+        <section class="flex w-[1440px] max-w-full flex-col justify-center px-56 py-24 text-center max-md:px-5">
+          <div class="flex w-[996px] max-w-full flex-col gap-8">
+            <div class="flex w-full flex-col gap-6 font-semibold max-md:max-w-full">
+              <p class="text-3xl uppercase tracking-wider leading-none text-green-700">Analisamos a sua multa com precisão de VAR.</p>
+              <h1 class="font-primary mt-6 text-8xl uppercase tracking-tighter leading-[81px] text-white-pure max-md:max-w-full max-md:text-4xl max-md:leading-10">
+                Revisão <span style="font-weight: 300; font-style: italic">técnica</span> que<br />
+                <span style="color: rgba(255,255,255,1)">MUDA</span>
+                <span style="font-weight: 300; font-style: italic; color: rgba(255,255,255,1)"> o jogo</span>
+                <span style="color: rgba(255,255,255,1)"> no trânsito</span>
+                <span style="color: rgba(88,116,23,1)">.</span>
+              </h1>
+              <p class="self-center mt-6 w-[588px] max-w-full text-2xl font-bold tracking-tight leading-7 text-neutral-400">
+                <span style="font-weight: 400; color: rgba(136,136,136,1)">Recebeu uma multa e acha que a decisão de campo não foi realmente justa? Erros formais acontecem e o VAR das Multas existe para corrigir. Revisamos o seu lance com base na lei para impedir pontuações indevidas na sua CNH.</span>
+              </p>
+            </div>
+            <div class="mt-8 flex flex-wrap justify-center gap-4 self-center text-base font-[450]">
+              <button type="button" class="min-w-60 text-black-main"><span class="flex flex-col justify-center rounded-xl border border-solid border-white-pure p-2"><span class="flex flex-col items-center justify-center rounded border border-solid border-white-pure px-8 py-3 max-md:px-5">Quero analisar minha multa</span></span></button>
+              <button type="button" class="min-w-60 text-white-pure"><span class="flex flex-col justify-center rounded-xl border border-solid border-white-pure p-2"><span class="flex flex-col items-center justify-center rounded px-8 py-3 max-md:px-5">Acompanhar meu processo</span></span></button>
+            </div>
+          </div>
+        </section>
+
+        <div class="min-h-px w-[1200px] max-w-full border border-solid border-black-1200 bg-black-1200"></div>
+
+        <section id="como-funciona" class="flex w-[1440px] max-w-full flex-col justify-center overflow-hidden px-32 py-20 max-md:px-5">
+          <div class="w-full max-md:max-w-full">
+            <div class="flex flex-wrap items-center gap-14">
+              <div class="min-w-60 flex-1">
+                <p class="text-lg font-bold uppercase tracking-[2.16px] leading-none text-green-main">Como funciona?</p>
+                <h2 class="font-primary mt-6 text-5xl font-bold tracking-tighter leading-10 text-white-pure max-md:text-4xl">Ajudamos você a decidir o próximo passo <span style="color: rgba(152,194,36,1)">com segurança</span>.</h2>
+                <p class="mt-6 text-base text-neutral-400">Lorem ipsum dolor sit amet consectetur. Arcu convallis dolor elit aliquam arcu imperdiet nisl. Bravida malesuada lacus tristique tellus lectus lorem est. Mattis maecenas ipsum ultrices.</p>
+              </div>
+              <div class="flex min-w-60 flex-wrap items-center">
+                <div class="w-[550px] min-w-60 overflow-hidden rounded-[32px] px-8 pt-10 shadow-sm max-md:max-w-full max-md:px-5">
+                  <img src="../../assets/images/png/checklist-_vdm 1@2x.png" alt="Process illustration" class="aspect-[0.93] w-full object-contain" />
+                </div>
+              </div>
+            </div>
+            <div class="mt-20 flex flex-wrap items-start gap-6 max-md:mt-10">
+              <div class="min-w-60 flex-1">
+                <div class="h-0.5 rounded-sm bg-neutral-800"></div>
+                <p class="mt-10 text-lg font-bold uppercase tracking-[2.16px] leading-none text-neutral-400">01.</p>
+                <h3 class="font-primary mt-1 text-3xl font-bold tracking-tight leading-none text-white-pure">Você envia sua multa ou notificação</h3>
+              </div>
+              <div class="min-w-60 flex-1">
+                <div class="rounded-sm bg-neutral-800"><div class="h-0.5 w-[254px] max-w-full bg-green-main"></div></div>
+                <p class="mt-10 text-lg font-bold uppercase tracking-[2.16px] leading-none text-neutral-400">02.</p>
+                <h3 class="font-primary mt-1 text-3xl font-bold tracking-tight leading-none text-white-pure">Nossa cabine técnica analisa o lance</h3>
+                <p class="mt-2.5 text-base text-neutral-400">É nesta etapa que ocorre a verificação dos mais de 35 requisitos legais para identificar falhas técnicas.</p>
+              </div>
+              <div class="min-w-60 flex-1">
+                <div class="h-0.5 rounded-sm bg-neutral-800"></div>
+                <p class="mt-10 text-lg font-bold uppercase tracking-[2.16px] leading-none text-neutral-400">03.</p>
+                <h3 class="font-primary mt-1 text-3xl font-bold tracking-tight leading-8 text-white-pure">Entramos em campo e cuidamos de todas as defesas e prazos</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="min-h-px w-[1200px] max-w-full border border-solid border-black-1200 bg-black-1200"></div>
+
+        <section class="flex w-[1440px] max-w-full flex-col items-center gap-20 overflow-hidden p-32 max-md:px-5 max-md:py-24">
+          <div class="flex w-[792px] max-w-full flex-col gap-6 text-center">
+            <h2 class="font-primary text-5xl font-bold tracking-tighter leading-none text-white-pure max-md:text-4xl">Nem toda decisão de campo é correta<span style="color: rgba(152,194,36,1)">.</span></h2>
+            <p class="text-base text-neutral-400">Nossa tecnologia investiga vícios formais e erros de procedimento do agente de trânsito. Entendemos o cenário, identificamos falhas no processo e lutamos para salvar a sua habilitação.</p>
+          </div>
+          <div class="mt-20 w-[1200px] max-w-full max-md:mt-10">
+            <div class="flex flex-wrap items-start gap-8">
+              <article id="lei-seca" class="min-w-60 flex-1 rounded-[32px] border border-solid border-black-1200 h-[255px] min-h-[255px] overflow-hidden">
+                <div class="w-full p-8 max-md:px-5"><h3 class="font-primary text-4xl font-semibold tracking-tighter leading-none text-white-pure">Lei Seca</h3><p class="mt-10 text-base text-neutral-400">Lorem ipsum dolor sit amet consectetur. Vulputate enim mollis tempus non commodo massa ut. Tristique a id orci non tellus dignissim egestas pulvinar. Mi id in venenatis congue ac orci semper enim massa viverra ut.</p><div class="mt-10 flex items-end gap-1"><button type="button" class="text-base font-[450] text-white-pure">Ver detalhes</button><img src="../../assets/icons/svg/wrapper.svg" alt="" class="aspect-square w-4 object-contain" /></div></div>
+              </article>
+              <article id="cnh-permissionaria" class="min-w-60 flex-1 rounded-[32px] border border-solid border-black-1200 h-[255px] min-h-[255px] overflow-hidden">
+                <div class="w-full p-8 max-md:px-5"><h3 class="font-primary text-4xl font-semibold tracking-tighter leading-none text-white-pure">CNH Permissionária</h3><p class="mt-10 text-base text-neutral-400">Lorem ipsum dolor sit amet consectetur. Quam ut scelerisque auctor tempor nunc leo arcu. Commodo at ultrices a vitae elit. In sed vulputate eleifend enim viverra habitant nulla enim. Enim facilisis ullamcorper sit.</p><div class="mt-10 flex items-end gap-1"><button type="button" class="text-base font-[450] text-white-pure">Ver detalhes</button><img src="../../assets/icons/svg/wrapper.svg" alt="" class="aspect-square w-4 object-contain" /></div></div>
+              </article>
+            </div>
+            <div class="mt-8 flex flex-wrap gap-8">
+              <article class="min-w-60 flex-1 rounded-[32px] border border-solid border-black-1200 overflow-hidden"><div class="w-full p-8 max-md:px-5"><h3 class="font-primary text-4xl font-semibold tracking-tighter leading-none text-white-pure">Multas Autossuspensivas</h3><p class="mt-10 text-base text-neutral-400">Excesso de velocidade ou manobras perigosas? Auditamos a homologação do radar e a validade técnica do auto para anular a penalidade.</p></div></article>
+              <article class="min-w-60 flex-1 rounded-[32px] border border-solid border-black-1200 overflow-hidden"><div class="w-full p-8 max-md:px-5"><h3 class="font-primary text-4xl font-semibold tracking-tighter leading-none text-white-pure">Excesso de Pontos</h3><p class="mt-10 text-base text-neutral-400">O placar estourou? Analisamos todo o seu histórico de infrações dos últimos 12 meses para encontrar falhas processuais, derrubar multas antigas e recuperar seu direito de dirigir.</p></div></article>
+            </div>
+          </div>
+        </section>
+
+        <div class="min-h-px w-[1200px] max-w-full border border-solid border-black-1200 bg-black-1200"></div>
+        <section class="flex w-[1440px] max-w-full flex-col justify-center gap-8 px-32 pt-20 pb-0 max-md:px-5">
+          <div class="mx-auto flex w-[588px] max-w-full flex-col gap-6 text-center font-bold">
+            <p class="text-lg uppercase tracking-[2.16px] leading-none text-green-main">TECNOLOGIA E RIGOR LEGAL</p>
+            <h2 class="font-primary text-5xl tracking-tighter leading-10 text-white-pure max-md:text-4xl">Sistema que audita processos e identifica falhas na sua infração.</h2>
+          </div>
+          <div class="mt-8 flex w-full flex-col pb-20">
+            <div class="w-[282px] max-w-full">
+              <div class="w-[282px] max-w-full"><div class="flex h-[45px] w-[45px] items-center justify-center rounded border border-solid border-white-pure bg-neutral-50"><img src="../../assets/icons/svg/Eye-icon-1.svg" alt="" class="aspect-square w-6 object-contain" /></div><h3 class="font-primary mt-3 text-3xl font-bold tracking-tight leading-none text-neutral-50">Monitoramento de Dados</h3><p class="mt-3 text-base text-neutral-400">Sistema conectado aos órgãos de trânsito para rastreio em tempo real.</p></div>
+              <div class="mt-40 max-md:mt-10"><div class="w-[282px] max-w-full"><div class="flex h-[45px] w-[45px] items-center justify-center rounded border border-solid border-white-pure bg-neutral-50"><img src="../../assets/icons/svg/Eye-icon-1.svg" alt="" class="aspect-square w-6 object-contain" /></div><h3 class="font-primary mt-3 text-3xl font-bold tracking-tight leading-none text-neutral-50">Auditoria de 35 Requisitos</h3><p class="mt-3 text-base text-neutral-400">Verificação eletrônica de mais de 35 critérios legais na notificação.</p></div></div>
+            </div>
+            <div class="z-10 mx-auto mt-0 flex w-[588px] max-w-full flex-col items-center gap-8"><div class="w-full px-4 pt-9"><img src="../../assets/images/png/mockup-celular 1@2x.png" alt="Platform mockup" class="aspect-[1.14] w-full object-contain" /></div></div>
+            <div class="mt-0 flex w-[282px] max-w-full flex-col items-end self-end"><div class="flex w-[282px] max-w-full flex-col"><div class="flex h-[45px] w-[45px] items-center justify-center self-end rounded border border-solid border-white-pure bg-neutral-50"><img src="../../assets/icons/svg/Eye-icon-1.svg" alt="" class="aspect-square w-6 object-contain" /></div><h3 class="font-primary mt-3 text-right text-3xl font-bold tracking-tight leading-none text-neutral-50">Estratégia Processual</h3><p class="mt-3 text-right text-base text-neutral-400">Definição da tese de defesa baseada em vícios formais e jurisprudência.</p></div><div class="mt-40 max-md:mt-10"><div class="flex w-[282px] max-w-full flex-col"><div class="flex h-[45px] w-[45px] items-center justify-center self-end rounded border border-solid border-white-pure bg-neutral-50"><img src="../../assets/icons/svg/Eye-icon-1.svg" alt="" class="aspect-square w-6 object-contain" /></div><h3 class="font-primary mt-3 text-right text-3xl font-bold tracking-tight leading-none text-neutral-50">Gestão Transparente</h3><p class="mt-3 text-right text-base text-neutral-400">Painel digital para você visualizar cada movimentação do seu processo.</p></div></div></div>
+          </div>
+        </section>
+
+        <div class="min-h-px w-[1200px] max-w-full border border-solid border-black-1200 bg-black-1200"></div>
+
+        <section class="flex w-full max-w-[1440px] flex-col items-center gap-14 overflow-hidden bg-black-main px-32 py-20 max-md:px-5 max-md:max-w-full">
+          <div class="flex w-[792px] max-w-full flex-col font-bold text-center">
+            <p class="text-lg uppercase tracking-[2.16px] leading-none text-green-main">Revisões que mudaram o jogo:</p>
+            <h2 class="font-primary mt-6 text-5xl tracking-tighter leading-none text-white-pure max-md:text-4xl">Lorem ipsum dolor sit amet consectetur</h2>
+          </div>
+          <div class="mt-14 flex w-full items-center justify-between max-md:mt-10 max-md:max-w-full">
+            <button type="button" class="self-stretch my-auto text-neutral-400" aria-label="Depoimento anterior" data-carousel-prev>&lt;</button>
+            <div class="flex w-[1168px] min-w-60 items-center justify-center gap-14 self-stretch my-auto max-md:max-w-full">
+              <article class="flex w-[486px] min-w-60 flex-col justify-center self-stretch rounded-2xl bg-black-1200 p-8 text-neutral-800 opacity-35 max-md:max-w-full max-md:px-5" data-testimonial><div class="flex gap-5"><img src="../../assets/images/png/img@2x.png" alt="Nome do Cliente avatar" class="aspect-[1.27] w-[52px] shrink-0 object-contain" /><div class="min-w-60 flex-1"><p class="text-base">Lorem ipsum dolor sit amet consectetur. Enim lacinia purus turpis facilisis tortor pulvinar in aliquam sed. Non ut massa posuere.</p><div class="mt-5 flex flex-col gap-0.5"><h3 class="font-primary text-lg font-bold tracking-tight leading-none">Nome do Cliente</h3><p class="text-xs">Santa Maria</p></div></div></div></article>
+              <article class="flex w-[486px] min-w-60 flex-col justify-center self-stretch rounded-2xl bg-black-1200 p-8 text-white-pure max-md:max-w-full max-md:px-5" data-testimonial><div class="flex gap-5"><img src="../../assets/images/png/img@2x-1.png" alt="Caio S. Lara avatar" class="aspect-[1.27] w-[52px] shrink-0 object-contain" /><div class="min-w-60 flex-1"><p class="text-base"><span style="color: rgba(255,255,255,1)">Eu dependo do carro para trabalhar e levar meus filhos na escola. Quando a notificação chegou, achei que tinha perdido a carteira. A equipe do VDM encontrou um erro que eu jamais veria.</span></p><div class="mt-5 flex flex-col gap-0.5"><h3 class="font-primary text-lg font-bold tracking-tight leading-none">Caio S. Lara</h3><p class="text-xs">Santa Maria</p></div></div></div></article>
+              <article class="flex w-[486px] min-w-60 flex-col justify-center self-stretch rounded-2xl bg-black-1200 p-8 text-neutral-800 opacity-35 max-md:max-w-full max-md:px-5" data-testimonial><div class="flex gap-5"><img src="../../assets/images/png/img@2x-2.png" alt="Nome do Cliente avatar" class="aspect-[1.27] w-[52px] shrink-0 object-contain" /><div class="min-w-60 flex-1"><p class="text-base">Minha CNH provisória estava em risco por uma multa de radar que eu nem sabia que existia. Eles analisaram o processo e viram que a notificação nunca tinha chegado no meu endereço.</p><div class="mt-5 flex flex-col gap-0.5"><h3 class="font-primary text-lg font-bold tracking-tight leading-none">Nome do Cliente</h3><p class="text-xs">Santa Maria</p></div></div></div></article>
+            </div>
+            <button type="button" class="flex w-6 flex-col justify-center self-stretch my-auto" aria-label="Próximo depoimento" data-carousel-next><img src="../../assets/icons/svg/Chevron right.svg" alt="" class="aspect-square w-6 object-contain" /></button>
+          </div>
+          <div class="mt-14 flex w-16 items-center justify-center gap-4 py-2 max-md:mt-10">
+            <button type="button" class="h-2 w-2 rounded bg-neutral-800" aria-label="Ir para depoimento 1" data-carousel-dot="0"></button>
+            <button type="button" class="h-2 w-2 rounded bg-green-main" aria-label="Ir para depoimento 2" data-carousel-dot="1"></button>
+            <button type="button" class="h-2 w-2 rounded bg-neutral-800" aria-label="Ir para depoimento 3" data-carousel-dot="2"></button>
+          </div>
+        </section>
+
+        <div class="min-h-px w-[1200px] max-w-full border border-solid border-black-1200 bg-black-1200"></div>
+
+        <section class="flex w-[1440px] max-w-full flex-col items-center justify-center gap-8 px-32 py-20 max-md:px-5">
+          <div class="flex w-[792px] max-w-full flex-col gap-14">
+            <div class="flex flex-col font-bold text-center">
+              <p class="text-lg uppercase tracking-[2.16px] leading-none text-green-main">POR QUE O VDM?</p>
+              <h2 class="font-primary mt-6 text-5xl tracking-tighter leading-10 text-white-pure max-md:text-4xl">Verificação eletrônica de mais de 35 critérios legais na notificação.</h2>
+            </div>
+            <div class="mt-14 flex flex-wrap justify-between gap-6 max-md:mt-10">
+              <article class="my-auto w-96 min-w-60 rounded-[32px] border-2 border-solid border-black-1200 p-8 shadow-sm max-md:px-5"><h3 class="font-primary text-4xl font-bold tracking-tighter leading-none text-white-pure">Auditoria VDM</h3><div class="mt-6 min-h-px w-full border border-solid border-black-1200 bg-black-1200"></div><div class="mt-6 flex flex-col gap-8 text-base text-neutral-400"><div class="flex items-center gap-4"><img src="../../assets/icons/svg/Check square-1.svg" alt="Check" class="aspect-square w-10 object-contain" /><p>Análise de 35 requisitos legais e vícios formais na notificação.</p></div><div class="flex items-center gap-4"><img src="../../assets/icons/svg/Check square-1.svg" alt="Check" class="aspect-square w-10 object-contain" /><p>Pontuação congelada (Efeito Suspensivo) enquanto durar o processo.</p></div><div class="flex items-center gap-4"><img src="../../assets/icons/svg/Check square-1.svg" alt="Check" class="aspect-square w-10 object-contain" /><p>Controlado. Lutamos para anular a infração ou postergar o bloqueio.</p></div><div class="flex items-center gap-4"><img src="../../assets/icons/svg/Check square-1.svg" alt="Check" class="aspect-square w-10 object-contain" /><p>Investimento único na defesa técnica para proteger sua autonomia.</p></div><div class="flex items-center gap-4"><img src="../../assets/icons/svg/Check square-1.svg" alt="Check" class="aspect-square w-10 object-contain" /><p>Conta com a técnica jurídica e erros da administração pública.</p></div></div></article>
+              <article class="w-96 min-w-60 rounded-[32px] border border-solid border-black-1200 p-8 max-md:px-5"><h3 class="font-primary text-4xl font-bold tracking-tighter leading-none text-white-pure">Defesa Padrão</h3><div class="mt-6 min-h-px w-full border border-solid border-black-1200 bg-black-1200"></div><div class="mt-6 flex flex-col gap-8 text-base text-neutral-400"><div class="flex items-center gap-4"><img src="../../assets/icons/svg/close.svg" alt="X" class="aspect-square w-10 object-contain" /><p>Modelos genéricos de internet ("copia e cola").</p></div><div class="flex items-center gap-4"><img src="../../assets/icons/svg/close.svg" alt="X" class="aspect-square w-10 object-contain" /><p>Os pontos caem na carteira após o prazo administrativo.</p></div><div class="flex items-center gap-4"><img src="../../assets/icons/svg/close.svg" alt="X" class="aspect-square w-10 object-contain" /><p>Bloqueio do direito de dirigir pode ser imediato.</p></div><div class="flex items-center gap-4"><img src="../../assets/icons/svg/close.svg" alt="X" class="aspect-square w-10 object-contain" /><p>Valor da Multa + Curso de Reciclagem + Gastos com App de Transporte.</p></div><div class="flex items-center gap-4"><img src="../../assets/icons/svg/close.svg" alt="X" class="aspect-square w-10 object-contain" /><p>Conta com a sorte ou clemência do julgador.</p></div></div></article>
+            </div>
+            <div class="mt-14 flex flex-wrap justify-center gap-4 self-center text-base font-[450] text-center max-md:mt-10">
+              <button type="button" class="min-w-60 text-black-main"><span class="flex flex-col justify-center rounded-xl border border-solid border-white-pure p-2"><span class="flex flex-col items-center justify-center rounded border border-solid border-white-pure px-8 py-3 max-md:px-5">Quero uma revisão técnica</span></span></button>
+              <button type="button" class="text-white-pure"><span class="flex flex-col justify-center rounded-xl border border-solid border-white-pure p-2"><span class="flex flex-col items-center justify-center rounded px-8 py-3 max-md:px-5">Falar com a equipe</span></span></button>
+            </div>
+          </div>
+        </section>
+
+        <div class="min-h-px w-[1200px] max-w-full border border-solid border-black-1200 bg-black-1200"></div>
+        <section class="flex w-full max-w-[1440px] flex-col justify-center gap-8 overflow-hidden px-32 py-20 max-md:px-5 max-md:max-w-full">
+          <div class="flex w-full items-center gap-14 max-md:max-w-full">
+            <div class="flex min-w-60 w-[588px] max-w-full flex-col gap-14">
+              <div class="font-bold">
+                <h2 class="font-primary text-5xl tracking-tighter leading-10 text-white-pure max-md:text-4xl">Recebeu uma multa e acha que a decisão de campo não foi realmente justa?</h2>
+                <p class="mt-6 text-2xl tracking-tight leading-7 text-neutral-400"><span style="font-weight: 400">Não contamos com a sorte. Enquanto defesas padrões usam</span><span style="color: rgba(246,246,246,1)"> modelos</span><span style="color: rgba(246,246,246,1)"> genéricos</span><span style="font-weight: 400">, auditamos </span><span style="color: rgba(246,246,246,1)">mais de 35 requisitos legais</span><span style="font-weight: 400"> na sua infração. Se houver uma falha técnica no processo, a lei garante: a penalidade deve ser anulada.</span></p>
+              </div>
+              <div class="mt-14 flex flex-wrap justify-center gap-4 self-start text-base font-[450] text-center max-md:mt-10">
+                <button type="button" class="min-w-60 text-black-main"><span class="flex flex-col justify-center rounded-xl border border-solid border-white-pure p-2"><span class="flex flex-col items-center justify-center rounded border border-solid border-white-pure px-8 py-3 max-md:px-5">Quero revisar minha multa</span></span></button>
+                <button type="button" class="text-white-pure"><span class="flex flex-col justify-center rounded-xl border border-solid border-white-pure p-2"><span class="flex flex-col items-center justify-center rounded px-8 py-3 max-md:px-5">Falar com a equipe</span></span></button>
+              </div>
+            </div>
+            <img src="../../assets/images/png/var-char (mao) 1@2x.png" alt="Final CTA illustration" class="my-auto aspect-[1.05] w-[598px] min-w-60 object-contain max-md:max-w-full" />
+          </div>
+        </section>
+
+        <div class="min-h-px w-[1200px] max-w-full border border-solid border-black-1200 bg-black-1200"></div>
+
+        <section class="flex w-[1440px] max-w-full flex-col items-center justify-center overflow-hidden p-32 max-md:px-5 max-md:py-24">
+          <div class="w-[1200px] max-w-full">
+            <div><h2 class="font-primary text-6xl font-bold tracking-tighter leading-none text-white-pure max-md:text-4xl">Perguntas Frequentes</h2><p class="mt-6 text-base text-neutral-400">Algumas questões que vocês geralmente perguntam.</p></div>
+            <div class="mt-20 flex flex-wrap items-start gap-6 text-2xl font-bold tracking-tight leading-none text-white-pure max-md:mt-10">
+              <div class="min-w-60 flex-1">
+                <div class="w-full border-y border-solid border-black-1200 px-1 py-7"><div class="flex items-center justify-between gap-4"><h3 class="font-primary flex-1">Lorem ipsum dolor sit amet consectetur.</h3><button type="button" aria-label="Expandir FAQ" data-faq-toggle><img src="../../assets/icons/svg/Chevron down.svg" alt="" class="aspect-square w-6 object-contain transition-transform duration-200" data-faq-icon /></button></div><div class="hidden pt-4 text-base font-normal leading-6 text-neutral-400" data-faq-answer>Resposta de fallback estática. Este bloco pode ser substituído pelo conteúdo real quando as perguntas e respostas finais estiverem prontas.</div></div>
+                <div class="w-full border-y border-solid border-black-1200 px-1 py-7"><div class="flex items-center justify-between gap-4"><h3 class="font-primary flex-1">Lorem ipsum dolor sit amet consectetur.</h3><button type="button" aria-label="Expandir FAQ" data-faq-toggle><img src="../../assets/icons/svg/Chevron down.svg" alt="" class="aspect-square w-6 object-contain transition-transform duration-200" data-faq-icon /></button></div><div class="hidden pt-4 text-base font-normal leading-6 text-neutral-400" data-faq-answer>Resposta de fallback estática. Este bloco pode ser substituído pelo conteúdo real quando as perguntas e respostas finais estiverem prontas.</div></div>
+                <div class="w-full border-y border-solid border-black-1200 px-1 py-7"><div class="flex items-center justify-between gap-4"><h3 class="font-primary flex-1">Lorem ipsum dolor sit amet consectetur.</h3><button type="button" aria-label="Expandir FAQ" data-faq-toggle><img src="../../assets/icons/svg/Chevron down.svg" alt="" class="aspect-square w-6 object-contain transition-transform duration-200" data-faq-icon /></button></div><div class="hidden pt-4 text-base font-normal leading-6 text-neutral-400" data-faq-answer>Resposta de fallback estática. Este bloco pode ser substituído pelo conteúdo real quando as perguntas e respostas finais estiverem prontas.</div></div>
+              </div>
+              <div class="min-w-60 flex-1">
+                <div class="w-full border-y border-solid border-black-1200 px-1 py-7"><div class="flex items-center justify-between gap-4"><h3 class="font-primary flex-1">Lorem ipsum dolor sit amet consectetur.</h3><button type="button" aria-label="Expandir FAQ" data-faq-toggle><img src="../../assets/icons/svg/Chevron down.svg" alt="" class="aspect-square w-6 object-contain transition-transform duration-200" data-faq-icon /></button></div><div class="hidden pt-4 text-base font-normal leading-6 text-neutral-400" data-faq-answer>Resposta de fallback estática. Este bloco pode ser substituído pelo conteúdo real quando as perguntas e respostas finais estiverem prontas.</div></div>
+                <div class="w-full border-y border-solid border-black-1200 px-1 py-7"><div class="flex items-center justify-between gap-4"><h3 class="font-primary flex-1">Lorem ipsum dolor sit amet consectetur.</h3><button type="button" aria-label="Expandir FAQ" data-faq-toggle><img src="../../assets/icons/svg/Chevron down.svg" alt="" class="aspect-square w-6 object-contain transition-transform duration-200" data-faq-icon /></button></div><div class="hidden pt-4 text-base font-normal leading-6 text-neutral-400" data-faq-answer>Resposta de fallback estática. Este bloco pode ser substituído pelo conteúdo real quando as perguntas e respostas finais estiverem prontas.</div></div>
+                <div class="w-full border-y border-solid border-black-1200 px-1 py-7"><div class="flex items-center justify-between gap-4"><h3 class="font-primary flex-1">Lorem ipsum dolor sit amet consectetur.</h3><button type="button" aria-label="Expandir FAQ" data-faq-toggle><img src="../../assets/icons/svg/Chevron down.svg" alt="" class="aspect-square w-6 object-contain transition-transform duration-200" data-faq-icon /></button></div><div class="hidden pt-4 text-base font-normal leading-6 text-neutral-400" data-faq-answer>Resposta de fallback estática. Este bloco pode ser substituído pelo conteúdo real quando as perguntas e respostas finais estiverem prontas.</div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="min-h-px w-[1200px] max-w-full border border-solid border-black-1200 bg-black-1200"></div>
+
+        <footer class="flex w-[1440px] max-w-full flex-col justify-center gap-8 px-32 py-16 max-md:px-5">
+          <div class="w-full">
+            <div class="flex flex-wrap justify-between gap-10">
+              <div class="flex h-full min-w-60 gap-14">
+                <img src="../../assets/icons/svg/logotipo.svg" alt="VAR das Multas Logo" class="aspect-[1.73] w-[111px] shrink-0 self-start object-contain" />
+                <div class="w-[238px]"><h3 class="font-primary text-2xl font-bold tracking-tight leading-none text-white-pure">Ficou alguma dúvida?</h3><p class="mt-2 text-sm text-neutral-400">Se precisar de ajuda com seu acesso, com documentos ou com o andamento do processo, a equipe do VAR das Multas pode orientar você.</p><div class="mt-2 flex items-end gap-1 pt-2"><a href="#contato" class="text-base font-[450] text-white-pure">Fale conosco</a><img src="../../assets/icons/svg/wrapper.svg" alt="" class="aspect-square w-4 object-contain" /></div></div>
+              </div>
+              <nav class="flex min-w-60 flex-wrap items-start gap-14 text-base font-[450] text-white-pure">
+                <div class="flex flex-col gap-4"><h4 class="font-primary text-2xl font-bold tracking-tight leading-none">Serviços</h4><a href="#lei-seca" class="mt-4 opacity-45">Lei Seca</a><a href="#cnh-permissionaria" class="mt-4 opacity-45">CNH Permissionária</a><a href="#acompanhar" class="mt-4 opacity-45">Acompanhe seu processo</a></div>
+                <div><h4 class="font-primary text-2xl font-bold tracking-tight leading-none">Institucional</h4><a href="#sobre" class="mt-4 block opacity-45">Sobre o VDM</a><a href="#contato" class="mt-4 block opacity-45">Fale conosco</a></div>
+                <div class="flex flex-col gap-4"><h4 class="font-primary text-2xl font-bold tracking-tight leading-none">Legais</h4><a href="#privacidade" class="mt-4 opacity-45">Política de Privacidade</a><a href="#termos" class="mt-4 opacity-45">Termos e condições</a></div>
+              </nav>
+            </div>
+            <div class="mt-14 min-h-px w-[1200px] max-w-full border border-solid border-black-1200 bg-black-1200 max-md:mt-10"></div>
+            <div class="mt-14 flex flex-wrap items-start justify-between gap-10 text-sm text-neutral-800 max-md:mt-10"><p>CNPJ XXXX VAR DAS MULTAS</p><div class="flex items-center justify-center gap-2"><p>VDM 2026. Design by GTRM</p><img src="../../assets/icons/svg/gtrm-logo.svg" alt="" class="aspect-square w-4 object-contain" /></div></div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
